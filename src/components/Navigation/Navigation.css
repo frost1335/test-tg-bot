@@ -1,0 +1,33 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px;
+  border-top: 1px solid #ccc;
+}
+
+.menu .menu-item {
+  width: 30%;
+}
+
+.menu .menu-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 20px 15px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  box-shadow: 3px 3px 10px #ccc;
+  font-size: 16px;
+  transition: 0.3s ease-in;
+  text-decoration: none;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu .menu-btn:hover,
+.menu .menu-btn:active {
+  background: #57b4ba;
+  color: #fff;
+}
