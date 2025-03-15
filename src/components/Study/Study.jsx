@@ -3,10 +3,10 @@ import "./Study.css";
 
 export default function Study() {
   const decks = [
-    { title: "Deack 1", description: "deck description", cardNumber: 30 },
-    { title: "Deack 2", description: "deck description", cardNumber: 50 },
-    { title: "Deack 3", description: "deck description", cardNumber: 60 },
-    { title: "Deack 4", description: "deck description", cardNumber: 130 },
+    { title: "Deck 1", description: "deck description", cardNumber: 30 },
+    { title: "Deck 2", description: "deck description", cardNumber: 50 },
+    { title: "Deck 3", description: "deck description", cardNumber: 60 },
+    { title: "Deck 4", description: "deck description", cardNumber: 130 },
   ];
   return (
     <div className="study">
@@ -14,10 +14,12 @@ export default function Study() {
 
       <div className="deck-menu">
         {decks.map((deck) => (
-          <div>
+          <div className="deck-item">
             <h2>{deck.title}</h2>
-            <p>{deck.description}</p>
-            <p>Number of cards: {deck.cardNumber}</p>
+            <div>
+              <p>{deck.description}</p>
+              <p>Number of cards: {deck.cardNumber}</p>
+            </div>
           </div>
         ))}
       </div>

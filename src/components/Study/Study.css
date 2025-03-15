@@ -10,13 +10,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.study .deck-menu > div {
-    border-radius: 10px;
-     border: 1px solid #ccc;
-     width: 100%;
-     text-align: center;
-     margin-bottom: 15px;
+.study .deck-menu .deck-item {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 3px 3px 10px #ccc;
 }
+
+.study .deck-menu .deck-item h2 {
+    color: #57b4ba;
+}
+
+
